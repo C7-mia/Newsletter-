@@ -13,7 +13,7 @@ const Home = () => {
   const fetchNews = async (query = 'technology') => {
     try {
       setLoading(true);
-      /nrequest URL
+      // Use the API_KEY constant in the request URL
       const response = await axios.get(
         `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`
       );
