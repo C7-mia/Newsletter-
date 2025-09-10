@@ -8,13 +8,13 @@ const Home = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // At the top of your Home component, with your other state declarations
+  
   const API_KEY = import.meta.env.VITE_API_KEY;
 
   const fetchNews = async (query = 'technology') => {
     try {
       setLoading(true);
-      // Use the API_KEY constant in the request URL
+      /nrequest URL
       const response = await axios.get(
         `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`
       );
