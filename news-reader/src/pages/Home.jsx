@@ -8,7 +8,6 @@ const Home = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  
   const API_KEY = import.meta.env.VITE_API_KEY;
 
   const fetchNews = async (query = 'technology') => {
