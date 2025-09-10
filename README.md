@@ -1,2 +1,0 @@
-# Newsletter-
-The *Newsletter Subscription Form* is a frontend web development project aimed at creating a clean, responsive, and user-friendly interface where users can subscribe to receive regular email updates from a website or business. .
