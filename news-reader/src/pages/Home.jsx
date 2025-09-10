@@ -8,11 +8,15 @@ const Home = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // At the top of your Home component, with your other state declarations
+  const API_KEY = import.meta.env.VITE_API_KEY;
+
   const fetchNews = async (query = 'technology') => {
     try {
       setLoading(true);
+      // Use the API_KEY constant in the request URL
       const response = await axios.get(
-        `https://newsapi.org/v2/everything?q=${query}&apiKey=YOUR_API_KEY` // Replace with your API key
+        `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`
       );
       setArticles(response.data.articles);
     } catch (error) {
@@ -46,4 +50,3 @@ const Home = () => {
 };
 
 export default Home;
-    
